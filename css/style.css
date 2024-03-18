@@ -6,7 +6,7 @@
     margin: 0;
     font-family: sans-serif;
     font-size: 1;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
 }
 
 /* Common */
@@ -73,16 +73,16 @@ nav span {
 }
 
 h1 {
-    font-size: 9vh;
+    font-size: 8vh;
 }
 
 h2 {
-    font-size: 6vh;
+    font-size: 4.5vh;
     margin: 2.5vh 0;
 }
 
 h3 {
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
 h4 {
@@ -192,7 +192,11 @@ header a {
 }
 
 .content-columns button {
-    padding: 1.5vh 15%;
+    padding: 1.5vh 9%;
+}
+
+#largo {
+    padding: 1.5vh 34%;
 }
 
 .content-columns h4 {
@@ -211,6 +215,12 @@ header a {
     min-height: 30vh;
     border: solid black 1px;
     margin: 5vh 0;
+}
+
+.equal-sec button:last-child {
+    color: black;
+    background-color: white;
+    border: 1px black solid;
 }
 
 .square {
@@ -278,4 +288,5 @@ footer h3 {
 
 footer div {
     margin: 1.5vh 0;
+    font-size: 2vh;
 }
