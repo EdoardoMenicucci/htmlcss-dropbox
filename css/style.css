@@ -99,6 +99,7 @@ nav {
     width: 30%;
     min-height: 40vh;
     border: solid black 1px;
+    margin-top: 2vh;
 }
 
 .wide-columns {
@@ -142,6 +143,10 @@ nav {
 .deploy:hover .display-none {
     display: inline;
     padding: 5vh 0;
+}
+
+.deploy:hover i {
+    transform: rotate(180deg);
 }
 
 /* Footer */
