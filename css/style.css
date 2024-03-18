@@ -23,6 +23,11 @@
     flex-wrap: wrap;
 }
 
+.flex-icon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .flex-columns-nospace {
     display: flex;
     align-items: center;
@@ -67,10 +72,10 @@ section {
 }
 
 
-
-nav span {
-    padding: 0 1vw;
+i {
+    padding-right: 0.5vw;
 }
+
 
 h1 {
     font-size: 8vh;
@@ -120,7 +125,7 @@ header {
 }
 
 nav {
-    min-height: 12vh;
+    min-height: 8vh;
     width: 100%;
     background-color: bisque;
     position: fixed;
@@ -128,10 +133,14 @@ nav {
     top: 0;
 }
 
-.titolone {
+nav span {
+    padding: 0 1vw;
+}
+
+.big-title {
     width: 100%;
     min-height: 20vh;
-    margin-top: 12vh;
+    margin-top: 8vh;
     background-color: lightblue;
 }
 
@@ -161,8 +170,17 @@ header a {
 
 .columns {
     width: 30%;
-    min-height: 125vh;
+    min-height: 150vh;
     border: solid black 1px;
+
+}
+
+.bspace {
+    margin-bottom: 5.7vh;
+}
+
+.fa-check {
+    color: green;
 }
 
 .content-columns {
@@ -248,10 +266,14 @@ header a {
 }
 
 .deploy {
-    padding: 3vh 0;
+    padding-top: 3vh;
     width: 100%;
     border-top: solid black 1px;
     border-bottom: solid black 1px;
+}
+
+.deploy .flex-columns {
+    margin-bottom: 3vh;
 }
 
 .display-none {
@@ -266,6 +288,7 @@ header a {
 .deploy:hover i {
     transform: rotate(180deg);
 }
+
 
 /* Footer */
 
@@ -287,6 +310,6 @@ footer h3 {
 }
 
 footer div {
-    margin: 1.5vh 0;
+    margin-top: 1.5vh;
     font-size: 2vh;
 }
