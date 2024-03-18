@@ -111,30 +111,37 @@ nav {
 .square {
     display: block;
     width: 100%;
-    height: 40vh;
+    height: calc(((100vw / 6) * 2) / 2);
     border: solid black 1px;
     background-color: rgb(61, 82, 88);
 }
 
 .bigsquare {
     width: calc((100% / 6) * 2);
-    height: 80vh;
+    height: calc((100vw / 6) * 2);
     border: solid black 1px;
     background-color: rgb(0, 115, 153);
 }
 
 .container-square {
     width: calc(100% / 6);
+    height: calc((100vw / 6) * 2);
 }
 
 .deploy {
     padding: 3vh 0;
     width: 100%;
-    border: solid black 1px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
 }
 
 .display-none {
     display: none;
+}
+
+.deploy:hover .display-none {
+    display: inline;
+    padding: 5vh 0;
 }
 
 /* Footer */
