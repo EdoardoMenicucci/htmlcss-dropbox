@@ -209,7 +209,10 @@ header a {
     width: 30%;
     min-height: 150vh;
     border: solid black 1px;
+}
 
+.columns button {
+    width: 100%;
 }
 
 .bspace {
@@ -252,13 +255,16 @@ header a {
 
 .content-columns button {
     padding: 1.5vh 9%;
+
 }
 
 .partner {
     width: 100%;
 }
 
-#largo {
+#larger-butt {
+    position: relative;
+    top: -2.6vh;
     padding: 1.5vh 34%;
 }
 
@@ -284,6 +290,12 @@ header a {
     margin: 5vh 0;
 }
 
+.wide-columns button {
+    position: relative;
+    top: -7vh;
+    padding: 1.5vh;
+}
+
 .equal-sec button:last-child {
     color: black;
     background-color: white;
@@ -301,7 +313,7 @@ header a {
 }
 
 .bigsquare {
-    padding: 6vh;
+    padding: 4vh;
     width: calc((100% / 6) * 2);
     height: calc((100vw / 6) * 2);
     background-color: whitesmoke;
