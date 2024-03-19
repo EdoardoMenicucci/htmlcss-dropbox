@@ -51,7 +51,7 @@
 
 .boxedS {
     margin: 0 auto;
-    width: 1780.10px;
+    width: 1780px;
 }
 
 .boxedB {
@@ -199,6 +199,10 @@ header a {
     position: absolute;
     max-height: 110%;
     bottom: -5.7vh;
+}
+
+.margin-top {
+    margin-top: 3vh;
 }
 
 .columns {
