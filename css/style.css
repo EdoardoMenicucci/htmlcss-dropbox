@@ -23,6 +23,20 @@
     flex-wrap: wrap;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-center-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .flex-icon {
     display: flex;
     flex-wrap: wrap;
@@ -37,34 +51,31 @@
 
 .boxedS {
     margin: 0 auto;
-    width: 70%;
+    width: 1780.10px;
 }
 
 .boxedB {
     margin: 0 auto;
-    width: 60%;
+    width: 1526px;
 }
 
 .small-sec {
     padding: 2vh 0;
     width: 40%;
     min-height: 40vh;
-    background-color: blanchedalmond;
 }
 
 .big-sec {
+    position: relative;
     padding: 2vh 0;
     width: 60%;
     min-height: 40vh;
-    background-color: aqua;
 }
 
 .equal-sec {
     padding: 2vh 0;
     width: 50%;
     min-height: 45vh;
-    background-color: aquamarine;
-    border: 1px solid black;
 }
 
 section {
@@ -125,23 +136,38 @@ header {
 }
 
 nav {
+    background-color: white;
+    padding: 0 1.5vw;
     min-height: 8vh;
     width: 100%;
-    background-color: bisque;
     position: fixed;
     left: 0;
     top: 0;
 }
 
 nav span {
+    display: inline-block;
     padding: 0 1vw;
+    line-height: 8vh;
+}
+
+nav span:hover {
+    border-bottom: 1px solid black;
+}
+
+nav button {
+    margin: 0;
+}
+
+.logo {
+    height: 2.5vh;
+    display: inline-block;
 }
 
 .big-title {
     width: 100%;
     min-height: 20vh;
     margin-top: 8vh;
-    background-color: lightblue;
 }
 
 .small-sec a {
@@ -160,12 +186,18 @@ header a {
 /* Main */
 
 .titolo {
-    margin: 5vh 0;
+    margin: 6vh 0;
     text-align: center;
 }
 
 .spunta {
     margin: 5vh 0;
+}
+
+.jumbo {
+    position: absolute;
+    max-width: 100%;
+    bottom: -5.7vh;
 }
 
 .columns {
@@ -181,6 +213,10 @@ header a {
 
 .fa-check {
     color: green;
+}
+
+.content-columns hr {
+    width: 25%;
 }
 
 .content-columns {
@@ -213,6 +249,10 @@ header a {
     padding: 1.5vh 9%;
 }
 
+.partner {
+    width: 100%;
+}
+
 #largo {
     padding: 1.5vh 34%;
 }
@@ -221,12 +261,16 @@ header a {
     margin: 2vh 0;
 }
 
+.columns-img {
+    width: 100%;
+}
+
 .small-columns {
     width: 30%;
     min-height: 40vh;
-    border: solid black 1px;
     margin: 2vh 0;
 }
+
 
 .wide-columns {
     width: 100%;
@@ -241,19 +285,21 @@ header a {
     border: 1px black solid;
 }
 
+.equal-sec:last-of-type {
+    padding-left: 2.5vw;
+}
+
 .square {
-    display: block;
+    display: flex;
     width: 100%;
     height: calc(((100vw / 6) * 2) / 2);
-    border: solid black 1px;
-    background-color: rgb(61, 82, 88);
 }
 
 .bigsquare {
+    padding: 6vh;
     width: calc((100% / 6) * 2);
     height: calc((100vw / 6) * 2);
-    border: solid black 1px;
-    background-color: rgb(0, 115, 153);
+    background-color: whitesmoke;
 }
 
 .container-square {
@@ -261,8 +307,75 @@ header a {
     height: calc((100vw / 6) * 2);
 }
 
+.square-img {
+    width: 60%;
+    filter: invert(100%);
+}
+
+.big-square-img {
+    width: 50%;
+}
+
+.bigsquare hr {
+    width: 20%;
+}
+
+.bigsquare p {
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+.lightgreen {
+    background-color: #a2d39b;
+}
+
+.darkred {
+    background-color: #61082b;
+}
+
+.red {
+    background-color: #d5001f;
+}
+
+.blue {
+    background-color: #0d2481;
+}
+
+.yellow {
+    background-color: #ffd830;
+}
+
+.lightblue {
+    background-color: #0093ce;
+}
+
+.lightlightblue {
+    background-color: #b4d0e7;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
+    border: 0;
+    margin-bottom: 5vh;
+    padding: 2vh;
+}
+
 .blue-bg {
     background-color: #b4d0e7;
+}
+
+.red-color {
+    color: #61082b;
+}
+
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
 }
 
 .deploy {
@@ -281,8 +394,8 @@ header a {
 }
 
 .deploy:hover .display-none {
-    display: inline;
-    padding: 5vh 0;
+    display: inline-block;
+    padding: 3vh 0;
 }
 
 .deploy:hover i {
@@ -292,6 +405,12 @@ header a {
 
 /* Footer */
 
+footer {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding-bottom: 3vh;
+}
+
 .bg-footer {
     background-color: rgb(26, 26, 26);
 }
@@ -299,9 +418,8 @@ header a {
 .sez-footer {
     margin-top: 5vh;
     width: calc(100% / 5);
-    min-height: 50vh;
-    border: 1px black solid;
     color: white;
+    padding-bottom: 5vh;
 
 }
 
@@ -312,4 +430,16 @@ footer h3 {
 footer div {
     margin-top: 1.5vh;
     font-size: 2vh;
+}
+
+footer hr {
+    width: 10%;
+    color: white;
+    margin-bottom: 2vh;
+}
+
+footer i,
+footer span {
+    display: inline-block;
+    padding-right: 1vw;
 }
