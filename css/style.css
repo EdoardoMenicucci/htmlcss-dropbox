@@ -143,6 +143,7 @@ nav {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 nav span {
@@ -196,7 +197,7 @@ header a {
 
 .jumbo {
     position: absolute;
-    max-width: 100%;
+    max-height: 110%;
     bottom: -5.7vh;
 }
 
