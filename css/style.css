@@ -352,6 +352,10 @@ header a {
     height: calc(((100vw / 6) * 2) / 2);
 }
 
+.square:hover {
+    border: 20px solid rgba(255, 255, 255, 0.4);
+}
+
 .bigsquare {
     padding: 4vh;
     width: calc((100% / 6) * 2);
