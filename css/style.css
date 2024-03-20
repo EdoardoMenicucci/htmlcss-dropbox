@@ -10,7 +10,6 @@
 }
 
 
-
 /* Scrollbar Chrome */
 
 ::-webkit-scrollbar {
@@ -31,7 +30,6 @@
 ::-webkit-scrollbar-button {
     color: black;
     background-color: #666;
-    /* border: 2px solid #0061ff; */
     width: 15px;
 }
 
@@ -192,6 +190,8 @@ nav span {
     line-height: 8vh;
 }
 
+/*******   Bonus bordo inferiore navbar      *******/
+
 nav span:hover {
     border-bottom: 1px solid black;
 }
@@ -235,11 +235,15 @@ header a {
     margin: 5vh 0;
 }
 
+/*******   Bonus posizione JUMBO      *******/
+
 .jumbo {
+
     position: absolute;
     max-height: 110%;
     bottom: -5.7vh;
 }
+
 
 .margin-top {
     margin-top: 3vh;
@@ -352,6 +356,8 @@ header a {
     height: calc(((100vw / 6) * 2) / 2);
 }
 
+/*******   Bonus bordo hover quadrati      *******/
+
 .square:hover {
     border: 20px solid rgba(255, 255, 255, 0.4);
 }
@@ -453,6 +459,8 @@ header a {
 .display-none {
     display: none;
 }
+
+/*******   Bonus domande a scomparsa      *******/
 
 .deploy:hover .display-none {
     display: inline-block;
